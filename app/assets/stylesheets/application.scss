@@ -16,10 +16,10 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-$bgDefault      : #c06014;
-$bgHighlight    : #ac5820;
-$colDefault     : #292929;
-$colHighlight   : #ffffff;
+$bgDefault      : #292929;
+$bgHighlight    : #000000;
+$colDefault     : #ffffff;
+$colHighlight   : #c06014;
 $dropDown       : false;
 .navbar-default {
   background-color: $bgDefault;
@@ -83,4 +83,12 @@ $dropDown       : false;
       > a, > a:hover, > a:focus {
         color: $colHighlight;
         background-color: $bgHighlight; }}}
+}
+a {
+  -webkit-transition: color 500ms ease;
+  -moz-transition: color 500ms ease;
+  -ms-transition: color 500ms ease;
+  -o-transition: color 500ms ease;
+  transition: color 500ms ease;
+  color: $colHighlight;
 }
