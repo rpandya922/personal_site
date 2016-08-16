@@ -52,18 +52,17 @@
           <li><a href="#">Projects</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
       </div>
     </div>
   </nav>
 
   <%= yield %>
 
-  <footer style="background-color: black;" class="footer">
+  <footer style="background-color: black;" class="footer static-bottom">
     <div class="container text-center">
-      <p class="text-muted">Footer Text</p>
+      <span class="text-muted">Made in Berkeley, CA </span>
+      <%= link_to(image_tag('linkedin-circle-grey.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
+      <%= link_to(image_tag('facebook-icon.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
     </div>
   </footer>
 

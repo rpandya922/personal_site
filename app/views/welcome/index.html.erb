@@ -3,23 +3,41 @@
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
     <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
   </ol>
 
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <img src="http://placehold.it/1200x400?text=IMAGE" alt="Image">
+      <%= image_tag('computer_blurred.png') %>
       <div class="carousel-caption">
-        <h3>Sell $</h3>
-        <p>Money Money.</p>
+        <h3>Software</h3>
+        <p>Java, Python, Ruby on Rails</p>
       </div>
     </div>
 
     <div class="item">
-      <img src="http://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
+      <%= image_tag('smash-wii-u.png') %>
       <div class="carousel-caption">
-        <h3>More Sell $</h3>
-        <p>Lorem ipsum...</p>
+        <h3>Super Smash Bros.</h3>
+        <p></p>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag('mountains.png') %>
+      <div class="carousel-caption">
+        <h3>Traveling</h3>
+        <p>Alaska, Amsterdam, London, Sydney</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag('robotics.png') %>
+      <div class="carousel-caption">
+        <h3>Robotics</h3>
+        <p>FLL & FTC</p>
       </div>
     </div>
   </div>
