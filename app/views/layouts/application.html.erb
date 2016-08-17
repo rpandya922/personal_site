@@ -16,7 +16,7 @@
 
       /* Add a gray background color and some padding to the footer */
       footer {
-        background-color: #f2f2f2;
+        background-color: black;
         padding: 25px;
       }
 
@@ -33,38 +33,50 @@
         }
       }
     </style>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
   <body style="background-color:#292929">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="/assets/image10.png"></a>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="/assets/image10.png"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="home_link"><%= link_to 'Home', welcome_index_path %></a></li>
+              <li class="about_link"><%= link_to 'About', about_index_path %></li>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Awards/Honors</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div id="main-container" class="container-fluid">
+        <div class="row">
+          <%= yield %>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="home_link"><%= link_to 'Home', welcome_index_path %></a></li>
-          <li class="about_link"><%= link_to 'About', about_index_path %></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+      <div class="push"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="container text-center">
+        <span class="text-muted">Made in Berkeley, CA </span>
+        <%= link_to(image_tag('linkedin-circle-orange.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
+        <%= link_to(image_tag('facebook-icon2.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
+        <%= link_to(image_tag('github-logo.png', style: 'height: 25px'), 'http://www.github.com/rpandya922') %>
+        <span class="text-muted navbar-right">
+        (C) 2016 RAVI PANDYA ALL RIGHTS RESERVED
+      </span>
       </div>
-    </div>
-  </nav>
-
-  <%= yield %>
-
-  <footer style="background-color: black;" class="footer static-bottom">
-    <div class="container text-center">
-      <span class="text-muted">Made in Berkeley, CA </span>
-      <%= link_to(image_tag('linkedin-circle-grey.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
-      <%= link_to(image_tag('facebook-icon.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
-    </div>
-  </footer>
-
+    </footer>
   </body>
 </html>
