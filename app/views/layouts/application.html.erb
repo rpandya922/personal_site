@@ -60,7 +60,7 @@
       </nav>
 
       <div id="main-container" class="container-fluid">
-        <div class="row">
+        <div class="row" style="font-size: 1.25em; text-align: justify; text-justify: inter-word;">
           <%= yield %>
         </div>
       </div>
@@ -68,14 +68,15 @@
     </div>
 
     <footer class="footer">
-      <div class="container text-center">
-        <span class="text-muted">Made in Berkeley, CA </span>
-        <%= link_to(image_tag('linkedin-circle-orange.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
-        <%= link_to(image_tag('facebook-icon2.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
-        <%= link_to(image_tag('github-logo.png', style: 'height: 25px'), 'http://www.github.com/rpandya922') %>
-        <span class="text-muted navbar-right">
-        (C) 2016 RAVI PANDYA ALL RIGHTS RESERVED
-      </span>
+      <div class="text-muted">
+        <div style="display: block; margin-left: auto; margin-right: 0;" class="text-center">
+          <%= link_to(image_tag('linkedin-circle-orange.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
+          <%= link_to(image_tag('facebook-icon2.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
+          <%= link_to(image_tag('github-logo.png', style: 'height: 25px'), 'http://www.github.com/rpandya922') %>
+          <div style="" class="navbar-right">
+            (C) RAVI PANDYA 2016 ALL RIGHTS RESERVED
+          </div>
+        </div>
       </div>
     </footer>
   </body>
