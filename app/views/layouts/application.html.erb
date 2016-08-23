@@ -51,7 +51,23 @@
             <ul class="nav navbar-nav">
               <li class="home_link"><%= link_to 'Home', welcome_index_path %></a></li>
               <li class="about_link"><%= link_to 'About', about_index_path %></li>
-              <li><a href="#">Projects</a></li>
+              <li class="dropdown projects_link">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Projects
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="disabled"><%= link_to 'CS61A', '#' %></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="disabled"><%= link_to 'CS61B', '#' %></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="disabled"><%= link_to 'Robotics', '#' %></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="disabled"><%= link_to 'Personal', '#' %></li>
+                  <li role="separator" class="divider"></li>
+                  <li><%= link_to 'All Projects', projects_index_path %></li>
+                </ul>
+              </li>
               <li><a href="#">Awards/Honors</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
@@ -70,12 +86,13 @@
     <footer class="footer">
       <div class="text-muted">
         <div style="display: block; margin-left: auto; margin-right: 0;" class="text-center">
+          Made in Berkeley, CA
           <%= link_to(image_tag('linkedin-circle-orange.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
           <%= link_to(image_tag('facebook-icon2.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
           <%= link_to(image_tag('github-logo.png', style: 'height: 25px'), 'http://www.github.com/rpandya922') %>
-          <div style="" class="navbar-right">
-            (C) RAVI PANDYA 2016 ALL RIGHTS RESERVED
-          </div>
+          <!--<div style="" class="navbar-right">-->
+            <!--(C) RAVI PANDYA 2016 ALL RIGHTS RESERVED-->
+          <!--</div>-->
         </div>
       </div>
     </footer>
