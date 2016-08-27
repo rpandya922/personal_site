@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'awards/index'
 
   get 'projects/index'
+  get 'projects/maps'
+  get 'projects/scheme'
 
   get 'about/index'
 
