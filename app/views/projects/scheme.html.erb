@@ -1,0 +1,12 @@
+<script>
+  var active = function() {
+    $(".projects_link").addClass('active');
+  };
+  active()
+</script>
+
+<div class="container-fluid">
+  <br />
+  <p>Code for my projects will soon be on <%= link_to 'GitHub', 'http://www.github.com/rpandya922' %>!</p>
+  <%= render 'shared/project', title: 'Scheme Interpreter', description: $scheme_description, img: 'project-scheme.png' %>
+</div>
