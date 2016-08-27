@@ -4,9 +4,11 @@
   };
   active()
 </script>
-<% maps_description = '<p>The maps project was a visualization of restaurant ratings in and around
-Berkeley and the <a href="https://www.yelp.com/dataset_challenge">Yelp Academic Dataset</a></p>'.html_safe %>
+
 <div class="container-fluid">
+  <br />
+  <p>Code for my projects will soon be on <%= link_to 'GitHub', 'http://www.github.com/rpandya922' %>!</p>
   <h1>CS61A</h1>
-  <%= render 'shared/project', title: 'Maps', description: maps_description, img: 'project-maps.png' %>
+  <%= render 'shared/project', title: 'Maps', description: $maps_description, img: 'project-maps.png' %>
+  <%= render 'shared/project', title: 'Scheme Interpreter', description: $scheme_description, img: 'project-scheme.png' %>
 </div>
