@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'projects/index'
   get 'projects/maps'
   get 'projects/scheme'
+  get 'projects/editor'
 
   get 'about/index'
 

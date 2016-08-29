@@ -10,4 +10,10 @@ Scheme language, which is a dialect of the functional programming language Lisp.
  <p>The interpreter has to be able to read Scheme expressions, evaluate them, and then display the results. This
  is known as the Read-Eval-Print-Loop, or REPL. To start, the interpreter must recognize Scheme lists in order to evaluate
  them. Next, it must create Frames in order to store variables and functions created by the user, which are stored as
- instances of the LambdaProcedure class. It then binds symbols to these procedures so they can be referenced later.'.html_safe
+ instances of the LambdaProcedure class. It then binds symbols to these procedures so they can be referenced later. <p>It also makes sure
+ to use tail recursion, which closes all recursively called frames when there is no more data to be passed on, which helps
+ drastically speed up recursive functions and makes them take up less space. Finally, the interpreter also has to handle errors
+ such as syntax and divide by zero errors without crashing, which it does by raising exceptions and handling them without
+ exiting the interpreter script.</p>'.html_safe
+
+$editor_description = ''.html_safe
