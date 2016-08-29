@@ -45,9 +45,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">
-              <%= image_tag('image10.png') %>
-            </a>
+            <%= link_to(image_tag('image10.png'), root_path, class: 'navbar-brand') %>
           </div>
           <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -64,6 +62,7 @@
                   <li><%= link_to 'Scheme', projects_scheme_path %></li>
                   <li role="separator" class="divider"></li>
                   <li class="disabled"><%= link_to 'CS61B', '#' %></li>
+                  <li><%= link_to 'Text Editor', projects_editor_path %></li>
                   <li role="separator" class="divider"></li>
                   <li class="disabled"><%= link_to 'Robotics', '#' %></li>
                   <li role="separator" class="divider"></li>
@@ -91,9 +90,9 @@
       <div class="text-muted">
         <div style="display: block; margin-left: auto; margin-right: 0;" class="text-center">
           Made in Berkeley, CA
-          <%= link_to(image_tag('linkedin-circle-orange.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
-          <%= link_to(image_tag('facebook-icon2.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
-          <%= link_to(image_tag('github-logo.png', style: 'height: 25px'), 'http://www.github.com/rpandya922') %>
+          <%= link_to(image_tag('linkedin-icon.png', style: 'height: 25px;'), 'http://www.linkedin.com/in/ravi-pandya') %>
+          <%= link_to(image_tag('facebook-icon5.png', style: 'height: 25px'), 'http://www.facebook.com/ravi.pandya.129') %>
+          <%= link_to(image_tag('github-icon.png', style: 'height: 25px'), 'http://www.github.com/rpandya922') %>
           <div>
             (C) RAVI PANDYA 2016 ALL RIGHTS RESERVED
           </div>
