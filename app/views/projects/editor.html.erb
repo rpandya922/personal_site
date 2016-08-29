@@ -1,0 +1,12 @@
+<script>
+  var active = function() {
+    $(".projects_link").addClass('active');
+  };
+  active()
+</script>
+
+<div class="container-fluid">
+  <br />
+  <p>Code for this project can be found on my <%= link_to 'GitHub', 'http://www.github.com/rpandya922/text-editor' %>!</p>
+  <%= render 'shared/project', title: 'Text Editor', description: $editor_description, img: 'editor-screenshot.png' %>
+</div>
