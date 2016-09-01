@@ -1,0 +1,12 @@
+<script>
+  var active = function() {
+    $(".projects_link").addClass('active');
+  };
+  active()
+</script>
+
+<div class="container-fluid">
+  <br />
+  <p>Code for this project can be found on my <%= link_to 'GitHub', 'http://www.github.com/rpandya922/bear-maps' %>!</p>
+  <%= render 'shared/project', title: 'Bear Maps', description: $bear_maps_description, img: 'bear-maps.png' %>
+</div>

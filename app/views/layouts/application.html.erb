@@ -57,18 +57,22 @@
                   <span class="caret"></span>
                 </a>
                 <ul class="dropdown-menu">
+                  <li><%= link_to 'All Projects', projects_index_path %></li>
+                  <li role="separator" class="divider"></li>
                   <li class="disabled"><%= link_to 'CS61A', '#' %></li>
                   <li><%= link_to 'Maps', projects_maps_path %></li>
                   <li><%= link_to 'Scheme', projects_scheme_path %></li>
                   <li role="separator" class="divider"></li>
                   <li class="disabled"><%= link_to 'CS61B', '#' %></li>
                   <li><%= link_to 'Text Editor', projects_editor_path %></li>
+                  <li><%= link_to 'Bear Maps', projects_bear_maps_path %></li>
                   <li role="separator" class="divider"></li>
-                  <li class="disabled"><%= link_to 'Robotics', '#' %></li>
+                  <li class="disabled"><%= link_to 'Internships', '#' %></li>
                   <li role="separator" class="divider"></li>
                   <li class="disabled"><%= link_to 'Personal', '#' %></li>
                   <li role="separator" class="divider"></li>
-                  <li><%= link_to 'All Projects', projects_index_path %></li>
+                  <li class="disabled"><%= link_to 'Robotics', '#' %></li>
+
                 </ul>
               </li>
               <li class="awards_link"><%= link_to 'Awards/Honors', awards_index_path %></li>

@@ -16,4 +16,27 @@ Scheme language, which is a dialect of the functional programming language Lisp.
  such as syntax and divide by zero errors without crashing, which it does by raising exceptions and handling them without
  exiting the interpreter script.</p>'.html_safe
 
-$editor_description = ''.html_safe
+$editor_description = "<p>In this project, I built a text editor completely from scratch in Java utilizing the
+ <a href='http://docs.oracle.com/javase/8/javase-clienttechnologies.htm'>JavaFX</a> library
+ for graphics. I had to design a data structure for representing and storing the characters typed which fit the time constraints.
+ The data structure had to be able to store the characters in order as well as the current cursor position and be able to
+ type and backspace at the cursor's position in constant time, so I used a linked list structure with a pointer for the current position
+ of the cursor, so that the characters directly in front of it and behind it could be accessed in constant time.</p>
+ <p>The graphics also had to be handled properly so that characters would show up in the correct spot when typed, which was
+ made slightly easier by using a fixed-width font. Once that was done, the words had to wrap around the lines so that no word
+ would be split at the end of the line. I implemented this as a recursive call to the render function, which would re-render all
+ characters on a new line starting after the last space typed.</p>
+ <p>The project also included clicking and arrow key functionality, which had to be constant time operations. To achieve this,
+ I made sure that when the mouse was clicked or arrows pressed, the closest character to that spot was chosen and the cursor
+ was re-rendered to that spot without rendering the entire text again.</p>".html_safe
+
+$bear_maps_description = '<p>Bear Maps is a mapping application which takes its tiling from the <a href="http://www.openstreetmap.org/">OpenStreetMaps</a>
+ project. My job was to implement a web API and write a web server that hosts some endpoints that take in parameters and provide output in JSON,
+ like the longitude, latitude, depth, etc. I implemented the data structure which allows the web server to render the tiles properly and allows users to zoom
+ in and out as well as scroll to other parts of the map. It uses a Quad Tree to store the filenames in the correct order. The
+ Quad Tree implementation makes it simple to render the correct tiles, since each level of the tree represents the map with a
+ particular zoom level. I had to design and implement the Quad Tree data structure myself, making sure that it did not take too
+ long to instantiate as well.</p>
+ <p>I also implemented a pathfinding algorithm which allows the user to click on two points on the map and draws the shortest
+ drivable path between them. It uses the A* algorithm, which is essentially a breadth-first search which takes edge weights and a
+ heuristic into account. In this case, the heuristic was simply the Euclidean distance between the current point and the endpoint.</p>'.html_safe

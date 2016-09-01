@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get 'projects/maps'
   get 'projects/scheme'
   get 'projects/editor'
+  get 'projects/bear_maps'
 
   get 'about/index'
 
