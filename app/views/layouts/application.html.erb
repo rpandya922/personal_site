@@ -63,6 +63,7 @@
                   <li><%= link_to 'Doximity', projects_doximity_path %></li>
                   <li role="separator" class="divider"></li>
                   <li class="disabled"><%= link_to 'Personal', '#' %></li>
+                  <li><%= link_to 'Novel', projects_novel_path %></li>
                   <li role="separator" class="divider"></li>
                   <li class="disabled"><%= link_to 'CS61A', '#' %></li>
                   <li><%= link_to 'Maps', projects_maps_path %></li>
@@ -84,7 +85,7 @@
       </nav>
 
       <div id="main-container" class="container-fluid">
-        <div class="row" style="font-size: 1.25em; text-align: justify; text-justify: inter-word;">
+        <div class="row" style="font-size: 1.25em; text-align: left; text-justify: inter-word;">
           <%= yield %>
         </div>
       </div>

@@ -1,0 +1,12 @@
+<script>
+  var active = function() {
+    $(".projects_link").addClass('active');
+  };
+  active()
+</script>
+
+<div class="container-fluid">
+  <br />
+  <p>This book can be found on <%= link_to 'Amazon', 'https://www.amazon.com/Empire-Revealed-Ravi-Pandya/dp/0983441014' %>!</p>
+  <%= render 'shared/project', title: 'An Empire Revealed', description: $novel_description, img: 'novel.jpg' %>
+</div>
