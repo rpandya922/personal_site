@@ -7,12 +7,14 @@
 
 <div class="container-fluid">
   <br />
-  <p>Code for my projects is on my <%= link_to 'GitHub', 'http://www.github.com/rpandya922' %>!</p>
-  <h1>CS61A</h1>
-  <%= render 'shared/project', title: 'Maps', description: $maps_description, img: 'project-maps.png' %>
-  <%= render 'shared/project', title: 'Scheme Interpreter', description: $scheme_description, img: 'project-scheme.png' %>
-  <br />
+  <p>Code for my projects is on my <%= link_to 'GitHub', 'http://www.github.com/rpandya922?tab=repositories' %>!</p>
+  <h1>Doximity</h1>
+  <%= render 'shared/project', title: 'Doc Jobs', description: $doc_jobs_description, img: 'doc-jobs.png' %>
   <h1>CS61B</h1>
   <%= render 'shared/project', title: 'Text Editor', description: $editor_description, img: 'editor-screenshot.png' %>
   <%= render 'shared/project', title: 'Bear Maps', description: $bear_maps_description, img: 'bear-maps.png' %>
+  <h1>CS61A</h1>
+  <%= render 'shared/project', title: 'Scheme Interpreter', description: $scheme_description, img: 'project-scheme.png' %>
+  <%= render 'shared/project', title: 'Maps', description: $maps_description, img: 'project-maps.png' %>
+  <br />
 </div>

@@ -40,3 +40,5 @@ $bear_maps_description = '<p>Bear Maps is a mapping application which takes its 
  <p>I also implemented a pathfinding algorithm which allows the user to click on two points on the map and draws the shortest
  drivable path between them. It uses the A* algorithm, which is essentially a breadth-first search which takes edge weights and a
  heuristic into account. In this case, the heuristic was simply the Euclidean distance between the current point and the endpoint.</p>'.html_safe
+
+$doc_jobs_description = '<p></p>'.html_safe
