@@ -94,6 +94,17 @@ a {
   -o-transition: color 500ms ease;
   transition: color 500ms ease;
   color: $colHighlight;
+  text-decoration: none !important;
+}
+
+.btn-default {
+  -webkit-transition: background-color 500ms ease;
+  -moz-transition: background-color 500ms ease;
+  -ms-transition: background-color 500ms ease;
+  -o-transition: background-color 500ms ease;
+  transition: background-color 500ms ease;
+  background-color: #888888;
+  border-color: #888888;
 }
 
 body {
@@ -118,7 +129,6 @@ html, body {
   height: 100px; /* .push must be the same height as .footer */
 }
 
-p {
-  //font-family: 'Josefin Slab', serif;
-  font-size: .8em;
+p, .awards {
+  font-family: 'Josefin Slab', serif;
 }

@@ -7,12 +7,12 @@
 
 <div class="container-fluid">
   <br />
-  <p>Code for my projects is on my <%= link_to 'GitHub', 'http://www.github.com/rpandya922?tab=repositories' %>!</p>
+  <p>Code for my projects can be found on my <%= link_to 'GitHub', 'http://www.github.com/rpandya922?tab=repositories', target: '_blank' %>!</p>
   <h1>Doximity</h1>
   <%= render 'shared/project', title: 'Doc Jobs', description: $doc_jobs_description, img: 'doc-jobs.png' %>
-  <%= render 'shared/project', title: 'Job Intel', description: $doc_jobs_description, img: 'job-intel.png' %>
+  <%= render 'shared/project', title: 'Job Intel', description: $job_intel_description, img: 'job-intel.png' %>
   <h1>Personal</h1>
-  <p>This book can be found on <%= link_to 'Amazon', 'https://www.amazon.com/Empire-Revealed-Ravi-Pandya/dp/0983441014' %>!</p>
+  <p>This book can be found on <%= link_to 'Amazon', 'https://www.amazon.com/Empire-Revealed-Ravi-Pandya/dp/0983441014', target: '_blank' %>!</p>
   <%= render 'shared/project', title: 'An Empire Revealed', description: $novel_description, img: 'novel.jpg' %>
   <h1>CS61B</h1>
   <%= render 'shared/project', title: 'Text Editor', description: $editor_description, img: 'editor-screenshot.png' %>
